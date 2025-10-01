@@ -1,0 +1,157 @@
+:root {
+  --desert-sand: #D6A77A;
+  --acacia-green: #7C9A6D;
+  --sunset-orange: #E67E22;
+  --bead-red: #C0392B;
+  --sky-blue: #5DADE2;
+  --stone-grey: #7F8C8D;
+  --white-clay: #FDFEFE;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--white-clay);
+  color: var(--stone-grey);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+header.site-header {
+  background-color: var(--sky-blue);
+  color: var(--white-clay);
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 4px solid var(--bead-red);
+}
+
+/* Circular logo or profile image */
+img.logo,
+img.profile-photo,
+img.circular {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--white-clay);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+section {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: var(--desert-sand);
+  border-left: 6px solid var(--bead-red);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+h2 {
+  color: var(--bead-red);
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 0.75rem;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: var(--sunset-orange);
+  color: var(--white-clay);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--acacia-green);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--stone-grey);
+  color: var(--white-clay);
+  border-top: 4px solid var(--bead-red);
+}
+
+#jerseys {
+  padding: 2rem;
+  background-color: var(--desert-sand);
+  border-left: 6px solid var(--bead-red);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#jerseys h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--bead-red);
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  text-align: center;
+  font-style: italic;
+  color: var(--acacia-green);
+  margin-bottom: 2rem;
+}
+
+.jersey-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.jersey-card {
+  background-color: #fff;
+  border: 2px solid var(--sky-blue);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jersey-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.jersey-card img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.jersey-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}
